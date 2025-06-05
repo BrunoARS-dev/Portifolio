@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Araújo - Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio profissional de Bruno Araújo, Desenvolvedor Full Stack com experiência em JavaScript, HTML, CSS, SQL e ferramentas NoCode.">
+    <!-- Fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>Bruno Araújo</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Baixar CV
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <div class="mobile-nav-profile">
+                <div class="avatar">
+                    <img src="./src/img/foto de perfil.jpg" alt="img_profile">
+                </div>
+                <div>
+                    <h2>Bruno Araújo</h2>
+                    <p>Desenvolvedor Full Stack</p> 
+                </div>
+            </div>
+            <button class="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav-footer">
+            <a href="#" class="btn btn-primary btn-block">
+                <i class="fas fa-download"></i> Baixar CV
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <div class="avatar avatar-xl">
+                            <img src="./src/img/foto de perfil.jpg" alt="img_profile">
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <span class="badge">Desenvolvedor Full Stack</span>
+                        <h1>Bruno Araújo</h1>
+                        <h2>Analista de Sistemas & Desenvolvedor</h2>
+                        <p>
+                            Desenvolvedor com experiência em criação de aplicações web utilizando JavaScript, HTML, CSS, SQL e
+                            ferramentas NoCode. Especializado em metodologia Scrum e desenvolvimento de soluções eficientes.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-code"></i> Ver Projetos
+                            </a>
+                            <a href="https://www.linkedin.com/in/bruno-araújo-ramos-santos-7232a7227" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-stack">
+            <div class="container">
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <i class="fas fa-globe"></i>
+                        <span>Web Development</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-server"></i>
+                        <span>NoCode</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                        <span>HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experiência em Desenvolvimento</h2>
+                <div class="experience-list">
+                    <!-- Job 1 -->
+                    <div class="card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Analista de Sistemas</h3>
+                                    <p class="company">Sudoeste Informática</p>
+                                </div>
+                                <span class="badge">Fevereiro 2025 - Atual</span>
+                            </div>
+                            <p class="job-description">
+                                Desenvolvimento de softwares sob demanda utilizando metodologia Scrum, a ferramenta Maker NoCode, Javascript, SQL, HTML, CSS.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Maker NoCode</span>
+                                <span class="tag">Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Analista de Desenvolvimento de Sistemas</h3>
+                                    <p class="company">Softwell Solutions</p>
+                                </div>
+                                <span class="badge">Março 2024 - Janeiro 2025</span>
+                            </div>
+                            <p class="job-description">
+                                Desenvolvimento de softwares sob demanda utilizando metodologia Scrum, a ferramenta Maker NoCode, Javascript, SQL, HTML, CSS.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Maker NoCode</span>
+                                <span class="tag">Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Analista de Suporte</h3>
+                                    <p class="company">Softwell Solutions</p>
+                                </div>
+                                <span class="badge">Setembro 2023 - Fevereiro 2024</span>
+                            </div>
+                            <p class="job-description">
+                                Prestação de apoio técnico aos clientes e estagiários. Esclarecimento de dúvidas sobre o Maker Studio. Acompanhamento do desenvolvimento de soluções web e mobile. Configuração de ambientes de desenvolvimento.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Maker Studio</span>
+                                <span class="tag">Suporte Técnico</span>
+                                <span class="tag">Configuração de Ambientes</span>
+                                <span class="tag">Desenvolvimento Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="job-header">
+                                <div>
+                                    <h3>Estagiário de Suporte</h3>
+                                    <p class="company">Softwell Solutions</p>
+                                </div>
+                                <span class="badge">Fevereiro 2022 - Agosto 2023</span>
+                            </div>
+                            <p class="job-description">
+                                Prestação de apoio ao cliente para esclarecimento de dúvidas sobre o Maker Studio. Acompanhamento do desenvolvimento de soluções web e mobile. Configuração de ambientes de desenvolvimento.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Maker Studio</span>
+                                <span class="tag">Suporte Técnico</span>
+                                <span class="tag">Desenvolvimento Web</span>
+                                <span class="tag">Configuração de Ambientes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                
+                <div class="tabs">
+                    <div class="tab-header">
+                        <button class="tab-btn active" data-tab="development">Desenvolvimento</button>
+                        <button class="tab-btn" data-tab="tools">Ferramentas</button>
+                        <button class="tab-btn" data-tab="courses">Cursos</button>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <!-- Development Tab -->
+                        <div class="tab-pane active" id="development">
+                            <div class="skills-grid">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>JavaScript</h3>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>HTML</h3>
+                                            <span>85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>CSS</h3>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>SQL</h3>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>Maker NoCode</h3>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>Desenvolvimento Web</h3>
+                                            <span>85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tools Tab -->
+                        <div class="tab-pane" id="tools">
+                            <div class="skills-grid">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>Maker - No Code</h3>
+                                            <img src="./src/img/icon-maker-5.png" alt="icone Maker no-code">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>Visual Studio Code</h3>
+                                            <img src="./src/img/visual studio code_code_icon.svg" alt="icone visual studio code">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>Git</h3>
+                                            <img src="./src/img/git_icon.svg" alt="icone Git">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="skill-header">
+                                            <h3>PostgreSQL</h3>
+                                            <img src="./src/img/postgre_icon.svg" alt="icone postgres">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Courses Tab -->
+                        <div class="tab-pane" id="courses">
+                            <div class="courses-list">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Minicurso Lógica de Programação</h3>
+                                        <p class="course-institution">Cubos Academy</p>
+                                        <p class="course-description">Fundamentos básicos de JavaScript.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Programa de Formação de Desenvolvedores - Maker Studio Bootstrap</h3>
+                                        <p class="course-description">Curso intensivo de programação e desenvolvimento de aplicações web através do Maker No-Code.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Algoritmos de Lógica de Programação</h3>
+                                        <p class="course-description">Conceitos e exercícios de algoritmos e lógica de programação.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Desenvolvedor Web Full Stack</h3>
+                                        <p class="course-institution">Rocketseat</p>
+                                        <p class="course-description">Desenvolvimento Web em HTML, CSS e JavaScript.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title">Formação em Tecnologia</h2>
+                <div class="card">
+                    <div class="card-accent"></div>
+                    <div class="card-content">
+                        <div class="education-header">
+                            <div>
+                                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                                <p class="institution">Uninter</p>
+                            </div>
+                            <span class="badge">Junho 2023 - Dezembro 2025 (Em andamento)</span>
+                        </div>
+                        <p class="education-description">
+                            Graduação em Análise e Desenvolvimento de Sistemas, com foco em programação, banco de dados, engenharia de software e desenvolvimento web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projetos & Tecnologias</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-terminal"></i>
+                            <h3>Desenvolvimento Web</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Experiência no desenvolvimento de aplicações web utilizando HTML, CSS e JavaScript, com foco em interfaces responsivas e funcionais.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsividade</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Banco de Dados</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Conhecimento em SQL para manipulação e consulta de dados, criação de tabelas e relacionamentos em sistemas de banco de dados.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">Consultas</span>
+                                <span class="tag">Modelagem</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Maker NoCode</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Especialização na ferramenta Maker NoCode para desenvolvimento rápido de aplicações, configuração de ambientes e suporte técnico.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Maker Studio</span>
+                                <span class="tag">NoCode</span>
+                                <span class="tag">Desenvolvimento Rápido</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Metodologias Ágeis</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Experiência com metodologia Scrum para desenvolvimento de software, trabalhando em sprints e entregas incrementais.
+                            </p>
+                            <div class="tags">
+                                <span class="tag">Scrum</span>
+                                <span class="tag">Sprints</span>
+                                <span class="tag">Desenvolvimento Ágil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contato Profissional</h2>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>baraujoramos@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/bruno-araújo-ramos-santos-7232a7227" target="_blank">Bruno Araújo</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div>
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/BrunoARS-dev" target="_blank">
+                                        <p>Portfólio de projetos e contribuições</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-form">
+                            <h3>Envie uma mensagem</h3>
+                            <form id="contactForm" action="https://formsubmit.co/baraujoramos" method="POST">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Nome</label>
+                                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" required placeholder="Seu email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>Bruno Araújo</span>
+                    </div>
+                    <p>© <span id="currentYear"></span> | Desenvolvedor Full Stack</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/bruno-araújo-ramos-santos-7232a7227" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:baraujoramos@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a  href="https://github.com/BrunoARS-dev" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
