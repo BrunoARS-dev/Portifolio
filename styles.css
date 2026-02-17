@@ -596,6 +596,7 @@ background-color: rgba(107, 114, 128, 0.2);
 /* Contact Section */
 .contact {
     padding: 4rem 0;
+    background-color: var(--background-alt);
 }
 
 .contact-info {
