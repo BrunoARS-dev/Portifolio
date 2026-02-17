@@ -346,6 +346,12 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to bottom, var(--primary-light), var(--background));
 }
 
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -415,6 +421,9 @@ background-color: rgba(107, 114, 128, 0.2);
     font-size: 0.75rem;
     color: var(--text-light);
 }
+
+
+
 
 /* Experience Section */
 .experience {
