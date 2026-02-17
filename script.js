@@ -90,27 +90,66 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Contact form submission (example - would need backend integration)
+// Contact form submission
 const contactForm = document.getElementById('contactForm');
+
+// Função para mostrar a mensagem bonita
+function showToast(message, type = 'success') {
+    // Cria o container se não existir
+    let container = document.getElementById('toast-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'toast-container';
+        document.body.appendChild(container);
+    }
+
+    const toast = document.createElement('div');
+    toast.className = `toast ${type === 'error' ? 'error' : ''}`;
+    
+    // Ícone dependendo do tipo
+    const icon = type === 'success' ? '<i class="fas fa-check-circle"></i>' : '<i class="fas fa-exclamation-circle"></i>';
+    
+    toast.innerHTML = `${icon} <span>${message}</span>`;
+    container.appendChild(toast);
+
+    // Remove do HTML após a animação acabar (3 segundos)
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
+
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
+
+        const btn = contactForm.querySelector('button');
+        const originalText = btn.textContent;
         
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Por favor, preencha todos os campos.');
-            return;
-        }
-        
-        // Here you would typically send the data to a server
-        // For this example, we'll just show a success message
-        alert('Mensagem enviada com sucesso! (Simulação)');
-        contactForm.reset();
+        btn.textContent = "Enviando...";
+        btn.disabled = true;
+
+        fetch("https://formsubmit.co/ajax/baraujoramos@gmail.com", {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                showToast('Mensagem enviada com sucesso!'); // Chamada da msg bonita
+                contactForm.reset();
+            } else {
+                showToast('Ops! Algo deu errado.', 'error');
+            }
+        })
+        .catch(error => {
+            showToast('Erro de conexão.', 'error');
+        })
+        .finally(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+        });
     });
 }
 
