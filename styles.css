@@ -602,10 +602,67 @@ background-color: rgba(107, 114, 128, 0.2);
     margin: 0 auto;
 }
 
+.projects .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.project-links .btn {
+    width: 100%;
+}
+
+.repo-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.8125rem;
+}
+
+.repo-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-dark);
+    background-color: var(--background-alt);
+    font-weight: 500;
+}
+
+.repo-links a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-light);
+    background-color: var(--primary-light);
+}
+
+/* Practice Areas Section */
+.practice-areas {
+    padding: 4rem 0;
+    background-color: var(--background-alt);
+}
+
 /* Contact Section */
 .contact {
     padding: 4rem 0;
-    background-color: var(--background-alt);
 }
 
 .contact-info {
