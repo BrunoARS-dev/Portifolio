@@ -649,6 +649,39 @@ background-color: rgba(107, 114, 128, 0.2);
 }
 
 /* Projects Section */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > .hero {
+    order: 1;
+}
+
+main > .tech-stack {
+    order: 2;
+}
+
+main > .projects {
+    order: 3;
+}
+
+main > .experience {
+    order: 4;
+}
+
+main > .skills {
+    order: 5;
+}
+
+main > .practice-areas {
+    order: 6;
+}
+
+main > .contact {
+    order: 7;
+}
+
 .projects {
     padding: 4rem 0;
   
@@ -658,7 +691,7 @@ background-color: rgba(107, 114, 128, 0.2);
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    max-width: 48rem;
+    max-width: 72rem;
     margin: 0 auto;
 }
 
@@ -936,7 +969,7 @@ background-color: rgba(107, 114, 128, 0.2);
 
 @media (min-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     
     .contact .card-content {
